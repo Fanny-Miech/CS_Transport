@@ -5,3 +5,6 @@ C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\Tra
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportConsole\obj\Debug\TransportConsole.csproj.CoreCompileInputs.cache
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportConsole\obj\Debug\TransportConsole.exe
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportConsole\obj\Debug\TransportConsole.pdb
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportConsole\obj\Debug\TransportConsole.csproj.CopyComplete

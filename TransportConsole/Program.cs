@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -54,8 +55,11 @@ namespace TransportConsole
             {
                 request = new LinesNearRequest(sendRequest);
             }
-            Console.WriteLine(request.Url);
-            Console.WriteLine(request.SendTheRequest);
+
+            List<BusNear> myDeserializedClass = JsonConvert.DeserializeObject<List<BusNear>>(request.SendTheRequest);
+            DisplayNearBus displayBus = new DisplayNearBus(sendRequest, myDeserializedClass);
+            displayBus.Display();
+
             Console.ReadLine();
         }
     }

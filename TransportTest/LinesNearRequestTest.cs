@@ -38,6 +38,22 @@ namespace TransportTest
         }
 
         [TestMethod]
+        public void ConstructorWithBadStringValuesReturnsIncorrectUrl()
+        {
+            //Arrange
+            ISendRequest fakeSendRequest = new FakeSendRequest();
+            string x = "5,728043";
+            string y = "45,18432";
+            string z = "500";
+            string expectedUrl = "https://data.mobilites-m.fr/api/linesNear/json?x=5.728043&y=45.18432&dist=500&details=True";
+            //Act
+            LinesNearRequest target = new LinesNearRequest(fakeSendRequest, x, y, z);
+            string actualUrl = target.Url;
+            //Assert
+            Assert.AreNotEqual(actualUrl, expectedUrl);
+        }
+
+        [TestMethod]
         public void ConstructorWithDoubleValuesReturnsCorrectUrl()
         {
             //Arrange
