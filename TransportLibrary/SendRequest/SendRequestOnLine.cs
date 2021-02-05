@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportConsole.SendRequest
+namespace TransportLibrary.SendRequest
 {
     public class SendRequestOnLine : ISendRequest
     {

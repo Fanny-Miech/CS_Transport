@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportConsole
+namespace TransportLibrary.Data
 {
-    public class BusNear
+    public class LinesNear
     {
         public string Id { get; set; }
         public string Name { get; set; }

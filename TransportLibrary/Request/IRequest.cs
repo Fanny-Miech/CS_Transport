@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportConsole.SendRequest
+namespace TransportLibrary.Request
 {
-    public interface ISendRequest
+    public interface IRequest
     {
         string Url { get; set; }
-        string DoRequest();
+        string SendTheRequest { get; }
     }
 }

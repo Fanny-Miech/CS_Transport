@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using TransportConsole.Request;
-using TransportConsole.SendRequest;
+using TransportLibrary.Request;
+using TransportLibrary.SendRequest;
 
 namespace TransportTest
 {

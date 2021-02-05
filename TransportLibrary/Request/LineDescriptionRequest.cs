@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TransportConsole.SendRequest;
+using TransportLibrary.SendRequest;
 
-namespace TransportConsole.Request
+namespace TransportLibrary.Request
 {
     public class LineDescriptionRequest : IRequest
     {
@@ -16,7 +12,7 @@ namespace TransportConsole.Request
         public LineDescriptionRequest(ISendRequest sendRequest, string lineChoice)
         {
             m_lineChoice = lineChoice;
-            Url = String.Format("https://data.mobilites-m.fr/api/routers/default/index/routes?codes={0}", lineChoice);
+            Url = string.Format("https://data.mobilites-m.fr/api/routers/default/index/routes?codes={0}", lineChoice);
             SendRequest = sendRequest;
         }
 

@@ -20,3 +20,5 @@ C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\Tra
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportTest\obj\Debug\TransportTest.pdb
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportTest\bin\Debug\Newtonsoft.Json.dll
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportTest\bin\Debug\TransportLibrary.dll
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportTest\bin\Debug\TransportLibrary.pdb

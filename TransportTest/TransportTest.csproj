@@ -66,6 +66,10 @@
       <Project>{e1ad9ede-5fd4-440a-8e55-b262d4875e75}</Project>
       <Name>TransportConsole</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TransportLibrary\TransportLibrary.csproj">
+      <Project>{d9c2f51f-07b7-47b8-9ffc-536873576958}</Project>
+      <Name>TransportLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,9 +4,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TransportConsole.SendRequest;
+using TransportLibrary.SendRequest;
 
-namespace TransportConsole.Request
+namespace TransportLibrary.Request
 {
     public class LinesNearRequest : IRequest
     {

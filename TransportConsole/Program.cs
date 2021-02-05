@@ -1,13 +1,10 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using TransportConsole.Request;
-using TransportConsole.SendRequest;
+using TransportLibrary.Request;
+using TransportLibrary.SendRequest;
+using TransportLibrary.Data;
 
 namespace TransportConsole
 {
@@ -56,8 +53,8 @@ namespace TransportConsole
                 request = new LinesNearRequest(sendRequest);
             }
 
-            List<BusNear> myDeserializedClass = JsonConvert.DeserializeObject<List<BusNear>>(request.SendTheRequest);
-            DisplayNearBus displayBus = new DisplayNearBus(sendRequest, myDeserializedClass);
+            List<LinesNear> myDeserializedNearLines = JsonConvert.DeserializeObject<List<LinesNear>>(request.SendTheRequest);
+            DisplayNearBus displayBus = new DisplayNearBus(sendRequest, myDeserializedNearLines);
             displayBus.Display();
 
             Console.ReadLine();

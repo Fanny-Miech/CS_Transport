@@ -1,19 +1,17 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TransportConsole.Request;
-using TransportConsole.SendRequest;
+using TransportLibrary.Request;
+using TransportLibrary.SendRequest;
+using TransportLibrary.Data;
 
 namespace TransportConsole
 {
     public class DisplayNearBus
     {
         private ISendRequest SendRequest { get; set; }
-        private List<BusNear> ListBus { get; set; }
-        public DisplayNearBus(ISendRequest sendRequest, List<BusNear> listBus)
+        private List<LinesNear> ListBus { get; set; }
+        public DisplayNearBus(ISendRequest sendRequest, List<LinesNear> listBus)
         {
             ListBus = listBus;
             SendRequest = sendRequest;
@@ -22,7 +20,7 @@ namespace TransportConsole
         public void Display()
         {
             int count = 1;
-            ListBus.ForEach(delegate (BusNear bus)
+            ListBus.ForEach(delegate (LinesNear bus)
             {
                 Console.WriteLine(String.Format("{0}- {1} \n{2}", count, bus.Name, DisplayLines(bus.Lines)));
                 count++;
@@ -43,15 +41,15 @@ namespace TransportConsole
 
         private string DisplayLineDescription(string line)
         {
-            BusDescription lineDescription = GetLineDescription(line);
+            LineDescription lineDescription = GetLineDescription(line);
             return String.Format("{0}, \n\t\t{1}", lineDescription.LongName, lineDescription.Mode);
         }
 
-        private BusDescription GetLineDescription(string line)
+        private LineDescription GetLineDescription(string line)
         {
             LineDescriptionRequest ldr = new LineDescriptionRequest(SendRequest, line);
             string jsonToDeserialize = ldr.SendTheRequest;
-            List<BusDescription> myDeserializedBusDescription = JsonConvert.DeserializeObject<List<BusDescription>>(jsonToDeserialize);
+            List<LineDescription> myDeserializedBusDescription = JsonConvert.DeserializeObject<List<LineDescription>>(jsonToDeserialize);
             return myDeserializedBusDescription[0];
         }
     }

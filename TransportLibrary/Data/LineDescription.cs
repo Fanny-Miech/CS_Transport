@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransportConsole
+namespace TransportLibrary.Data
 {
     // BusDescription myDeserializedBusDescription = JsonConvert.DeserializeObject<BusDescription>(myJsonResponse); 
-    public class BusDescription
+    public class LineDescription
     {
         public string Id { get; set; }
         public string GtfsId { get; set; }
