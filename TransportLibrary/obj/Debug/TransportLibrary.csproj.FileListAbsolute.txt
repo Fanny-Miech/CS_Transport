@@ -4,3 +4,6 @@ C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\Tra
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportLibrary\obj\Debug\TransportLibrary.csproj.CoreCompileInputs.cache
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportLibrary\obj\Debug\TransportLibrary.dll
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportLibrary\obj\Debug\TransportLibrary.pdb
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\TransportLibrary\obj\Debug\TransportLibrary.csproj.CopyComplete
