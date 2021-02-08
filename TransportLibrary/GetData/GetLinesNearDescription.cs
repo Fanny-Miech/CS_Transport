@@ -42,13 +42,18 @@ namespace TransportLibrary.GetData
                 GetLinesNear getLinesNear = new GetLinesNear(SendRequest, X, Y, Z);
                 List<LinesNear> linesNear = getLinesNear.LinesNear;
 
-                //get list of names
-                string list = GetListOfName(linesNear);
+                List<LineDescription> listLineDescription;
+                //If linesNear is not empty get lines description
+                if (linesNear.Any())
+                {
+                    //get list of names
+                    string list = GetListOfName(linesNear);
 
-                //send Request and transform Json to data
-                GetLineDescription getLineDescription = new GetLineDescription(SendRequest, list);
-                List<LineDescription> listLineDescription = getLineDescription.LinesDescription;
-
+                    //send Request and transform Json to data
+                    GetLineDescription getLineDescription = new GetLineDescription(SendRequest, list);
+                    listLineDescription = getLineDescription.LinesDescription;
+                }
+                else listLineDescription = new List<LineDescription>();
                 return new LinesNearDescription(linesNear, listLineDescription);
             }
             set

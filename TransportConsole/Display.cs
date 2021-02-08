@@ -14,11 +14,12 @@ namespace TransportConsole
 
         public void DisplayLines()
         {
+            Console.WriteLine(LinesNearDescription.Message);
             int count = 1;
             //For each stop bus -> display busTop.Name and get details for lines
             LinesNearDescription.LinesNear.ForEach(delegate (LinesNear busStop)
             {
-                Console.WriteLine(String.Format("{0}- {1} \n{2}", count, busStop.Name, DisplayLines(busStop.Lines)));
+                Console.WriteLine(String.Format("\n{0}- {1} \n{2}", count, busStop.Name, DisplayLines(busStop.Lines)));
                 count++;
             });
 
