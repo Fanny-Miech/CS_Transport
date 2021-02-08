@@ -1,9 +1,5 @@
 ﻿using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TransportLibrary.Data;
 using TransportLibrary.Request;
 using TransportLibrary.SendRequest;
@@ -29,7 +25,6 @@ namespace TransportLibrary.GetData
                 //ConvertJson to object
                 List<LineDescription> myDeserializedLinesDescription = JsonConvert.DeserializeObject<List<LineDescription>>(request.SendTheRequest);
                 return myDeserializedLinesDescription;
-
             }
             set
             {

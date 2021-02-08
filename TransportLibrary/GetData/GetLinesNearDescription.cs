@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TransportLibrary.Data;
 using TransportLibrary.SendRequest;
 
@@ -43,7 +41,7 @@ namespace TransportLibrary.GetData
                 //Get LinesNear object
                 GetLinesNear getLinesNear = new GetLinesNear(SendRequest, X, Y, Z);
                 List<LinesNear> linesNear = getLinesNear.LinesNear;
-                //Get List<LineDescription>
+
                 //get list of names
                 string list = GetListOfName(linesNear);
 
@@ -77,7 +75,7 @@ namespace TransportLibrary.GetData
             return GetStringFromList(listLinesName);
         }
 
-        private string GetStringFromList(List<string> stringList)
+        public string GetStringFromList(List<string> stringList)
         {
             string list = "";
             stringList.ForEach(delegate (string name)

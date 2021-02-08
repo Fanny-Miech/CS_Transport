@@ -1,8 +1,5 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Net;
-using TransportLibrary.Request;
 using TransportLibrary.SendRequest;
 using TransportLibrary.Data;
 using TransportLibrary.GetData;
@@ -17,20 +14,20 @@ namespace TransportConsole
                 SecurityProtocolType.Tls11 |
                 SecurityProtocolType.Tls;
 
-            //Define choice to make request online
+            //Define choice to make request onLine or offLine
             Console.WriteLine("API OnLine ? y/n");
             string apiChoice = Console.ReadLine();
 
             ISendRequest sendRequest;
-            GetLinesNearDescription getData;
-
             if (apiChoice == "y")
             {
                 sendRequest = new SendRequestOnLine();
             }
             else sendRequest = new SendRequestOffLine();
 
-            //Define params for LinesNear request
+            //Define params to getData
+            GetLinesNearDescription getData;
+
             Console.WriteLine("Ajouter des infos personnalisées ? y/n");
             string choice = Console.ReadLine();
 
@@ -47,20 +44,15 @@ namespace TransportConsole
 
                 getData = new GetLinesNearDescription(sendRequest, xUser, yUser, zUser);
             }
-
             else
             {
                 getData = new GetLinesNearDescription(sendRequest);
-
-                //request = new LinesNearRequest(sendRequest);
             }
 
+            //get and display data
             LinesNearDescription linesNearDescription = getData.LinesNearDescription;
             Display display = new Display(linesNearDescription);
             display.DisplayLines();
-            //List<LinesNear> myDeserializedNearLines = JsonConvert.DeserializeObject<List<LinesNear>>(request.SendTheRequest);
-            //DisplayNearBus displayBus = new DisplayNearBus(sendRequest, myDeserializedNearLines);
-            //displayBus.Display();
 
             Console.ReadLine();
         }

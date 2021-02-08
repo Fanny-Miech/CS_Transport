@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TransportLibrary.SendRequest
 {
@@ -22,8 +18,6 @@ namespace TransportLibrary.SendRequest
             WebRequest request = WebRequest.Create(Url);
             // Get the response.
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            // Display the status.
-            Console.WriteLine(response.StatusDescription);
             // Get the stream containing content returned by the server.
             Stream dataStream = response.GetResponseStream();
             // Open the stream using a StreamReader for easy access.
