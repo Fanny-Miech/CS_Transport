@@ -16,25 +16,28 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="4" HorizontalAlignment="Center" FontWeight="Bold">
         Hello World
         </TextBlock>
 
-        <!--<Label Grid.Column="0" Grid.Row="1" Margin="4" Content="First Name:" HorizontalAlignment="Right"/>
-        -->
-        <!-- UpdateSourceTrigger=PropertyChanged makes sure that changes in the TextBoxes are immediately applied to the model. -->
-        <!--
-        <TextBox Grid.Column="1" Grid.Row="1" Margin="4" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="200"/>
+        <Label Grid.Column="0" Grid.Row="1" Margin="4" Content="Latitude :" HorizontalAlignment="Right"/>
+        <!--UpdateSourceTrigger=PropertyChanged makes sure that changes in the TextBoxes are immediately applied to the model.-->
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="4" Text="{Binding Latitude, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="200"/>
 
-        <Label Grid.Column="0" Grid.Row="2" Margin="4" Content="Last Name:" HorizontalAlignment="Right"/>
-        <TextBox Grid.Column="1" Grid.Row="2" Margin="4" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"  Width="200"/>
+        <Label Grid.Column="0" Grid.Row="2" Margin="4" Content="Longitude :" HorizontalAlignment="Right"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Margin="4" Text="{Binding Longitude, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"  Width="200"/>
 
-        <Label Grid.Column="0" Grid.Row="3" Margin="4" Content="Age:" HorizontalAlignment="Right"/>
-        <TextBlock Grid.Column="1" Grid.Row="3" Margin="4" Text="{Binding Age}" HorizontalAlignment="Left"/>-->
+        <Label Grid.Column="0" Grid.Row="3" Margin="4" Content="Distance :" HorizontalAlignment="Right"/>
+        <TextBox Grid.Column="1" Grid.Row="3" Margin="4" Text="{Binding Distance, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="200"/>
 
-
+        <TextBlock Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Margin="4" Text="{Binding Latitude}" HorizontalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Margin="4" Text="{Binding Longitude}" HorizontalAlignment="Center" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" Margin="4" Text="{Binding Distance}" HorizontalAlignment="Center" FontWeight="Bold"/>
 
     </Grid>
 </Window>

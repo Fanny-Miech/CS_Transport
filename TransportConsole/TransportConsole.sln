@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppEssai", "..\WpfAppEss
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppEssai2", "..\WpfAppEssai2\WpfAppEssai2.csproj", "{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppCoordonates", "..\WpfAppCoordonates\WpfAppCoordonates.csproj", "{B71205A4-9E8F-44A2-8E1F-AB3FA28D66CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfEditCoordonates", "..\EditCoordonates\WpfEditCoordonates.csproj", "{4B2433E2-C770-47C7-9975-5D71014A6F5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71205A4-9E8F-44A2-8E1F-AB3FA28D66CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71205A4-9E8F-44A2-8E1F-AB3FA28D66CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71205A4-9E8F-44A2-8E1F-AB3FA28D66CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71205A4-9E8F-44A2-8E1F-AB3FA28D66CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B2433E2-C770-47C7-9975-5D71014A6F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2433E2-C770-47C7-9975-5D71014A6F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2433E2-C770-47C7-9975-5D71014A6F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2433E2-C770-47C7-9975-5D71014A6F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

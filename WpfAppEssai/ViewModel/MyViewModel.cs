@@ -4,70 +4,61 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WpfAppEssai.Model;
 
 namespace WpfAppEssai.ViewModel
 {
     // INotifyPropertyChanged notifies the View of property changes, so that Bindings are updated.
     sealed class MyViewModel : INotifyPropertyChanged
     {
-        private User user;
+        private Coordonates coordonates;
 
-        public string FirstName
+        public string Latitude
         {
-            get { return user.FirstName; }
+            get { return coordonates.Latitude; }
             set
             {
-                if (user.FirstName != value)
+                if (coordonates.Latitude != value)
                 {
-                    user.FirstName = value;
-                    OnPropertyChange("FirstName");
-                    // If the first name has changed, the FullName property needs to be udpated as well.
-                    OnPropertyChange("FullName");
+                    coordonates.Latitude = value;
+                    OnPropertyChange("Latitude");
                 }
             }
         }
 
-        public string LastName
+        public string Longitude
         {
-            get { return user.LastName; }
+            get { return coordonates.Longitude; }
             set
             {
-                if (user.LastName != value)
+                if (coordonates.Longitude != value)
                 {
-                    user.LastName = value;
-                    OnPropertyChange("LastName");
-                    // If the first name has changed, the FullName property needs to be udpated as well.
-                    OnPropertyChange("FullName");
+                    coordonates.Longitude = value;
+                    OnPropertyChange("Longitude");
                 }
             }
         }
 
-        // This property is an example of how model properties can be presented differently to the View.
-        // In this case, we transform the birth date to the user's age, which is read only.
-        public int Age
+        public string Distance
         {
-            get
+            get { return coordonates.Distance; }
+            set
             {
-                DateTime today = DateTime.Today;
-                int age = today.Year - user.BirthDate.Year;
-                if (user.BirthDate > today.AddYears(-age)) age--;
-                return age;
+                if (coordonates.Distance != value)
+                {
+                    coordonates.Distance = value;
+                    OnPropertyChange("Distance");
+                }
             }
-        }
-
-        // This property is just for display purposes and is a composition of existing data.
-        public string FullName
-        {
-            get { return FirstName + " " + LastName; }
         }
 
         public MyViewModel()
         {
-            user = new User
+            coordonates = new Coordonates
             {
-                FirstName = "John",
-                LastName = "Doe",
-                BirthDate = DateTime.Now.AddYears(-30)
+                Latitude = "5.1245873",
+                Longitude = "45.3658741",
+                Distance = "500"
             };
         }
 
