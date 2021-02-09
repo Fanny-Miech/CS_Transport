@@ -1,0 +1,15 @@
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\bin\Debug\WpfAppEssai.exe.config
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\bin\Debug\WpfAppEssai.exe
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\bin\Debug\WpfAppEssai.pdb
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai.csprojAssemblyReference.cache
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\MainWindow.g.cs
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\App.g.cs
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai_MarkupCompile.cache
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai_MarkupCompile.lref
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\MainWindow.baml
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai.g.resources
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai.Properties.Resources.resources
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai.csproj.GenerateResource.cache
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai.csproj.CoreCompileInputs.cache
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai.exe
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\WpfAppEssai\obj\Debug\WpfAppEssai.pdb

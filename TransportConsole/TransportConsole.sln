@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportTest", "..\Transpo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportLibrary", "..\TransportLibrary\TransportLibrary.csproj", "{D9C2F51F-07B7-47B8-9FFC-536873576958}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppEssai", "..\WpfAppEssai\WpfAppEssai.csproj", "{AD33236E-BCA8-429C-BCBD-52F009553FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppEssai2", "..\WpfAppEssai2\WpfAppEssai2.csproj", "{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D9C2F51F-07B7-47B8-9FFC-536873576958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C2F51F-07B7-47B8-9FFC-536873576958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C2F51F-07B7-47B8-9FFC-536873576958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD33236E-BCA8-429C-BCBD-52F009553FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD33236E-BCA8-429C-BCBD-52F009553FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD33236E-BCA8-429C-BCBD-52F009553FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD33236E-BCA8-429C-BCBD-52F009553FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
