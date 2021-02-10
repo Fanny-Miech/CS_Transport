@@ -12,6 +12,7 @@ using TransportLibrary.SendRequest;
 using System.Windows;
 using TransportLibrary.GetData;
 using TransportLibrary.Data;
+using System.Collections.ObjectModel;
 
 namespace WpfDisplayTransportMessage.ViewModel
 {
@@ -109,6 +110,7 @@ namespace WpfDisplayTransportMessage.ViewModel
 
         /// The "apply changes" command
         public ICommand DisplayTransportMessageCommand { get; private set; }
+        public ObservableCollection<LinesNear> Lines { get; set; }
 
         /// constructor
         public CoordonatesViewModel()
@@ -124,16 +126,27 @@ namespace WpfDisplayTransportMessage.ViewModel
 
             DisplayTransportMessageCommand = new CoordonatesCommand(
                 DisplayTransportMessage);
+            Lines = new ObservableCollection<LinesNear>();
+
         }
+
 
         /// Executes the "apply changes" command
         public void DisplayTransportMessage()
         {
+            Lines.Clear();
             GetLinesNearDescription getData = new GetLinesNearDescription(coordonates.SendRequest, coordonates.Latitude, coordonates.Longitude, coordonates.Distance);
-            LinesNearDescription data = getData.LinesNearDescription;
-            MessageBox.Show(data.Message);
+            LinesNearDescription Data = getData.LinesNearDescription;
+            SetLines(Data.LinesNear);
         }
 
+        public void SetLines(List<LinesNear> linesNear)
+        {
+            linesNear.ForEach(delegate (LinesNear line)
+            {
+                Lines.Add(line);
+            });
+        }
 
     }
 }

@@ -33,17 +33,26 @@
             Margin="200, 20, 200, 20">
 
             <Label Content="Latitude"/>
-            <TextBox Padding="5" Text="{Binding Coordonates.Latitude}"/>
+            <TextBox Padding="5" Text="{Binding Latitude}"/>
 
             <Label Content="Longitude"/>
-            <TextBox Padding="5" Text="{Binding Coordonates.Longitude}"/>
+            <TextBox Padding="5" Text="{Binding Longitude}"/>
 
             <Label Content="Distance"/>
-            <TextBox Padding="5" Text="{Binding Coordonates.Distance}"/>
+            <TextBox Padding="5" Text="{Binding Distance}"/>
 
             <TextBlock/>
-            <Button Padding="5" Content="Apply Changes"
+            <Button Padding="5" Content="Afficher"
             Command="{Binding DisplayTransportMessageCommand}" />
         </StackPanel>
+        <ListView Grid.Row="3" ItemsSource="{Binding Lines}" Grid.ColumnSpan="3" Margin="100,10,100,10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="100" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Name" Width="auto" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Zone" Width="auto" DisplayMemberBinding="{Binding Zone}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>
