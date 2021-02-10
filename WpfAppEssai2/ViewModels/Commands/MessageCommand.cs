@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace WpfAppEssai2.ViewModels.Commands
+namespace WpfDisplayMessage.ViewModels.Commands
 {
     public class MessageCommand : ICommand
     {

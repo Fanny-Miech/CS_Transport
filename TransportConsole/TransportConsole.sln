@@ -9,13 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportTest", "..\Transpo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportLibrary", "..\TransportLibrary\TransportLibrary.csproj", "{D9C2F51F-07B7-47B8-9FFC-536873576958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppEssai", "..\WpfAppEssai\WpfAppEssai.csproj", "{AD33236E-BCA8-429C-BCBD-52F009553FC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDisplayCoordonates", "..\WpfAppEssai\WpfDisplayCoordonates.csproj", "{AD33236E-BCA8-429C-BCBD-52F009553FC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppEssai2", "..\WpfAppEssai2\WpfAppEssai2.csproj", "{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDisplayMessage", "..\WpfAppEssai2\WpfDisplayMessage.csproj", "{1C6E924A-A1EA-4B33-B85F-02A4AF4C2476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppCoordonates", "..\WpfAppCoordonates\WpfAppCoordonates.csproj", "{B71205A4-9E8F-44A2-8E1F-AB3FA28D66CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest", "..\WpfAppCoordonates\WpfTest.csproj", "{B71205A4-9E8F-44A2-8E1F-AB3FA28D66CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfEditCoordonates", "..\EditCoordonates\WpfEditCoordonates.csproj", "{4B2433E2-C770-47C7-9975-5D71014A6F5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDisplayTransportMessage", "..\EditCoordonates\WpfDisplayTransportMessage.csproj", "{4B2433E2-C770-47C7-9975-5D71014A6F5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

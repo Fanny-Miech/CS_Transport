@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfAppCoordonates.ViewModels;
+using WpfTest.ViewModels;
 
-namespace WpfAppCoordonates
+namespace WpfTest
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml

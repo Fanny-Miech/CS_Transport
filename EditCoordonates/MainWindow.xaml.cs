@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WpfDisplayTransportMessage.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EditCoordonates
+namespace WpfDisplayTransportMessage
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -23,6 +24,7 @@ namespace EditCoordonates
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new CoordonatesViewModel();
         }
     }
 }

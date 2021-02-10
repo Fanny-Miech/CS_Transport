@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfAppEssai2.Model
+namespace WpfDisplayMessage.Model
 {
     public class Model1
     {

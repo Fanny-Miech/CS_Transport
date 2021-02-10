@@ -1,7 +1,7 @@
-﻿<Application x:Class="EditCoordonates.App"
+﻿<Application x:Class="WpfDisplayTransportMessage.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:EditCoordonates"
+             xmlns:local="clr-namespace:WpfDisplayTransportMessage"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

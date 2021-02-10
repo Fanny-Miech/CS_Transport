@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfAppEssai2.ViewModels;
+using WpfDisplayMessage.ViewModels;
 
-namespace WpfAppEssai2
+namespace WpfDisplayMessage
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml

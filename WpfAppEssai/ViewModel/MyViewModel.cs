@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WpfAppEssai.Model;
+using WpfDisplayCoordonates.Model;
 
-namespace WpfAppEssai.ViewModel
+namespace WpfDisplayCoordonates.ViewModel
 {
     // INotifyPropertyChanged notifies the View of property changes, so that Bindings are updated.
     sealed class MyViewModel : INotifyPropertyChanged

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using WpfAppEssai2.ViewModels.Commands;
+using WpfDisplayMessage.ViewModels.Commands;
 
-namespace WpfAppEssai2.ViewModels
+namespace WpfDisplayMessage.ViewModels
 {
     public class MessageViewModel
     {

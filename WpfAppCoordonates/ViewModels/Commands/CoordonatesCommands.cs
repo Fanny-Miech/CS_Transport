@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace WpfAppCoordonates.ViewModels.Commands
+namespace WpfTest.ViewModels.Commands
 {
     public class CoordonatesCommands : ICommand
     {

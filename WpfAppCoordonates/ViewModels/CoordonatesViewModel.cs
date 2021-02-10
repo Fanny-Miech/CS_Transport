@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using WpfAppCoordonates.ViewModels.Commands;
+using WpfTest.ViewModels.Commands;
 
-namespace WpfAppCoordonates.ViewModels
+namespace WpfTest.ViewModels
 {
 
     public class CoordonatesViewModel

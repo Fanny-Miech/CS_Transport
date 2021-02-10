@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfAppEssai.ViewModel;
+using WpfDisplayCoordonates.ViewModel;
 
-namespace WpfAppEssai
+namespace WpfDisplayCoordonates
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -28,6 +28,11 @@ namespace WpfAppEssai
             _viewModel = new MyViewModel();
             // The DataContext serves as the starting point of Binding Paths
             DataContext = _viewModel;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
