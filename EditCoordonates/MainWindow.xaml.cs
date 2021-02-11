@@ -24,7 +24,6 @@ namespace WpfDisplayTransportMessage
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new CoordonatesViewModel();
         }
     }
 }

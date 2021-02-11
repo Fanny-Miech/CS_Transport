@@ -20,5 +20,12 @@ namespace TransportLibrary.Data
             }
             else Message = "Liste des transports correspondants à votre demande :";
         }
+
+        public void Clear()
+        {
+            Message.Remove(0);
+            LinesNear.Clear();
+            LinesDescription.Clear();
+        }
     }
 }

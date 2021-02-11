@@ -18,3 +18,6 @@ C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\Edi
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\EditCoordonates\bin\Debug\TransportLibrary.pdb
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\EditCoordonates\bin\Debug\Newtonsoft.Json.xml
 C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\EditCoordonates\obj\Debug\WpfDisplayTransportMessage.csproj.CopyComplete
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\EditCoordonates\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\EditCoordonates\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\fanou\Documents\2019-CampusNumérique\cours\modules\C#\CS_Transport\EditCoordonates\bin\Debug\Microsoft.Maps.MapControl.WPF.xml

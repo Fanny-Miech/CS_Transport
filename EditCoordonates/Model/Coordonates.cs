@@ -15,7 +15,6 @@ namespace WpfDisplayTransportMessage.Model
         public string Longitude { get; set; }
         public string Distance { get; set; }
         public bool IsValid { get; set; }
-        public ISendRequest SendRequest { get; set; }
     }
 
 
