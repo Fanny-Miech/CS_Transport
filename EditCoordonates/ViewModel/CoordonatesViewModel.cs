@@ -13,6 +13,7 @@ using System.Windows;
 using TransportLibrary.GetData;
 using TransportLibrary.Data;
 using System.Collections.ObjectModel;
+using Caliburn.Micro;
 
 namespace WpfDisplayTransportMessage.ViewModel
 {
@@ -26,11 +27,10 @@ namespace WpfDisplayTransportMessage.ViewModel
         public ICommand RefreshCommand { get; private set; }
 
         // Data to display (get from library)
-        public ObservableCollection<LinesNear> LinesNear { get; set; }
-        public ObservableCollection<LineDescription> LinesDescription { get; set; }
-        public ObservableCollection<string> Lines { get; set; }
         public LinesNearDescription _data;
         public LinesNearDescription Data { get { return _data; } set { _data = value; OnPropertyChanged("Data"); } }
+        public BindableCollection<LinesToDisplay> LinesToDisplay { get; set; }
+
         public ISendRequest SendRequest { get; set; }
 
         //---------------   Constructor     ---------------------------------------------------------
@@ -52,9 +52,7 @@ namespace WpfDisplayTransportMessage.ViewModel
             RefreshCommand = new RefreshCommand(RefreshData);
 
             //instanciate ObservableCollection
-            LinesNear = new ObservableCollection<LinesNear>();
-            LinesDescription = new ObservableCollection<LineDescription>();
-            Lines = new ObservableCollection<string>();
+            LinesToDisplay = new BindableCollection<LinesToDisplay>();
 
         }
 
@@ -69,52 +67,54 @@ namespace WpfDisplayTransportMessage.ViewModel
             Latitude = "5.728043";
             Longitude = "45.184320";
             Distance = "500";
-            LinesNear.Clear();
-            LinesDescription.Clear();
-            Lines.Clear();
             Data.Clear();
+            LinesToDisplay.Clear();
         }
 
         // Executes the "Display Transport" command
         public void DisplayTransportMessage()
         {
             //clear the list
-            LinesDescription.Clear();
-            Lines.Clear();
-            LinesNear.Clear();
+            LinesToDisplay.Clear();
             //instanciate sendrequest
             if (IsOnline) { SendRequest = new SendRequestOnLine(); }
             else { SendRequest = new SendRequestOffLine(); };
             // getData
             GetLinesNearDescription getData = new GetLinesNearDescription(SendRequest, coordonates.Latitude, coordonates.Longitude, coordonates.Distance);
             Data = getData.LinesNearDescription;
-            // set ObservableCollection
-            SetLinesNear(Data.LinesNear);
-            SetLinesDescription(Data.LinesDescription);
+            SetLinesToDisplay(Data);
         }
 
         //---------------   Fill ObservableCollections     -------------------------------------------------------------
 
-        // fill the observableCollection LinesNear and Lines
-        public void SetLinesNear(List<LinesNear> linesNear)
+        // fill LinesToDisplay
+        public void SetLinesToDisplay(LinesNearDescription linesNearDescription)
         {
-            linesNear.ForEach(delegate (LinesNear lineNear)
+            linesNearDescription.LinesNear.ForEach(delegate (LinesNear linesNear)
             {
-                LinesNear.Add(lineNear);
-                lineNear.Lines.ForEach(delegate (string line)
+                List<Lines> lines = SetLines(linesNearDescription.LinesDescription, linesNear);
+                LinesToDisplay linesToDisplay = new LinesToDisplay(linesNear.Name, linesNear.Zone, linesNearDescription.Message, lines);
+                LinesToDisplay.Add(linesToDisplay);
+            });
+        }
+        // fill Lines
+        public List<Lines> SetLines(List<LineDescription> lineDescription, LinesNear linesNear)
+        {
+            List<Lines> listLines = new List<Lines>();
+            linesNear.Lines.ForEach(delegate (string name)
+            {
+                lineDescription.ForEach(delegate (LineDescription line)
                 {
-                    Lines.Add(line);
+                    if (name == line.Id)
+                    {
+                        Lines newLine = new Lines(line.LongName, line.ShortName, line.Color, line.Mode);
+                        listLines.Add(newLine);
+                    }
                 });
             });
+            return listLines;
         }
-        // fill the observableCollection LinesDescription
-        public void SetLinesDescription(List<LineDescription> linesDescription)
-        {
-            linesDescription.ForEach(delegate (LineDescription lineDescription)
-            {
-                LinesDescription.Add(lineDescription);
-            });
-        }
+
 
         //-----------------------------------------------------------------------------------------------------------
         //----------------------    Form parameters     -------------------------------------------------------------------
